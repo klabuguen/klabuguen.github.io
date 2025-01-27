@@ -8,7 +8,7 @@
       rel="stylesheet"
     />
 
-    <title>Katarina Labuguen</title>
+    <title>{{ page.title }}</title>
     <style>
       /* Basic reset */
       * {
@@ -76,6 +76,9 @@
         background-color: #f1f0ea; /* White background */
       }
 
+
+      
+
       h1 {
         color: #333;
       }
@@ -83,6 +86,51 @@
       p {
         line-height: 1.6;
       }
+
+
+      .posts-container {
+  /* max-width: 600px; */
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.post-count {
+  font-weight: normal;
+  color: #555;
+}
+
+.post {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.post h3 {
+  margin: 0;
+}
+
+.post a {
+  color: #1a0dab;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+}
+
+      
     </style>
   </head>
   <body>
@@ -96,7 +144,7 @@
       />
 
       <h2><center>Katarina Labuguen</center></h2>
-      <a href="#about">About Me</a>
+      <a href="index.html">About Me</a>
       <a href="#portfolio">Portfolio</a>
       <a href="blog.html">Blog</a>
       <a href="#contact">Contact</a>
@@ -104,20 +152,10 @@
 
     <!-- Main content -->
     <div class="content">
-      <h1>About Me</h1>
-      <section id="about">
-        <p><br>Hi, I’m <strong>Katarina</strong> - an Embedded Software Developer currently working in the Space industry.</p> 
-        <p><br>My work revolves around building efficient, reliable software solutions for spacecraft. 
-          I have experience in software development for human-rated spacecraft, ensuring compliance with strict safety and reliability standards, as well as optimizing DSP algorithms implemented for flight vehicles. </p>
-          
-          <p><br>I thrive in fast-paced multidisciplinary environments, collaborating with scientists and engineers to integrate software with 
-          complex systems. I am also well-versed in developing fault-tolerant software solutions to meet the rigorous demands of space missions.</p>
-                
-        <p><br>I genuinely enjoy learning, so when I'm not coding, you'll likely find me learning about new technologies and refining my skills to push the boundaries of embedded technology.</p>
-      
-        <p><br>Let’s connect and build something great together!</p>
+      <h1>{{ page.title }}</h1>
+      <section id="blog">
+        {{ content }}
       </section>
-           </p>
     </div>
   </body>
 </html>

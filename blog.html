@@ -1,0 +1,23 @@
+---
+layout: default
+title: Blog
+---
+
+{% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+<div class="posts-container">
+  {% for year in posts_by_year %}
+  <!-- <h2>{{ year.name }} <span class="post-count">{{ year.items | size }}</span></h2> -->
+  <hr>
+
+  {% for post in year.items %}
+  <div class="post">
+    <h2>
+      <a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h3><span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span></h3>
+    <p class="post-meta">🕓 {{ post.reading_time | default: "1" }} minute read</p>
+    <p>{{ post.excerpt | strip_html }}...</p>
+  </div>
+  {% endfor %}
+
+  {% endfor %}
+</div>
