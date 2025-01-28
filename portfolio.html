@@ -1,0 +1,17 @@
+---
+layout: default
+title: Portfolio
+---
+
+<h1>My Projects</h1>
+<div class="projects-grid">
+  {% for project in site.projects %}
+  <div class="project-card">
+    <img src="{{ project.image }}" alt="{{ project.title }}">
+    <h2><a href="{{ project.link }}" target="_blank">{{ project.title }}</a></h2>
+    <p class="project-date">{{ project.date | date: "%B %d, %Y" }}</p>
+    <p>{{ project.description }}</p>
+    <p><strong>Categories:</strong> {{ project.categories | join: ', ' }}</p>
+  </div>
+  {% endfor %}
+</div>
