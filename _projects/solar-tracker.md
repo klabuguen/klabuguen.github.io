@@ -1,10 +1,10 @@
 ---
-title: "CPU"
+title: "Solar Tracker"
 date: 2024-01-20
 description: "A cool project showcasing my skills in embedded systems."
-image: "/images/katstronaut.png"
+image: "/images/solar-tracker.png"
 link: "https://github.com/myprofile/my-awesome-project"
-categories: ["HDL","Verilog","Embedded Systems", "C"]
+categories: ["RaspberryPi", "Embedded Systems", "C++"]
 ---
 
 This project involves developing firmware for real-time data processing using STM32.

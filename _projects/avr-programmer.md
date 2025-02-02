@@ -1,10 +1,10 @@
 ---
-title: "And Another Project"
+title: "AVR Programmer"
 date: 2024-03-10
 description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
-image: "/images/katstronaut.png"
+image: "/images/avr-programmer.jpg"
 link: "https://github.com/myprofile/my-awesome-project"
-categories: ["Embedded Systems", "C++"]
+categories: ["Arduino", "Embedded Systems", "C", "Soldering"]
 ---
 
 Lorem ipsum odor amet, consectetuer adipiscing elit. Faucibus scelerisque fusce curae tellus luctus justo nec. Consequat class bibendum nulla viverra pharetra facilisi sem. Aultrices non penatibus conubia dapibus. Interdum vel scelerisque lectus natoque himenaeos accumsan fusce maecenas montes. Placerat massa morbi nostra sem, proin fames fringilla nostra. Cursus penatibus nec fusce adipiscing velit sagittis lorem nostra maecenas. Lectus primis augue arcu cras lacus nec non. Neque rhoncus eget a posuere magna sagittis. Tempus elementum erat ante orci class commodo.

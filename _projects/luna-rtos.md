@@ -2,9 +2,9 @@
 title: "LunaRTOS"
 date: 2024-01-20
 description: "A cool project showcasing my skills in embedded systems."
-image: "/images/katstronaut.png"
+image: "/images/lunartos.png"
 link: "https://github.com/myprofile/my-awesome-project"
-categories: ["RTOS", "C", "Assembly (MIPS3000)"]
+categories: ["RTOS", "C", "Assembly"]
 ---
 
 This project involves developing firmware for real-time data processing using STM32.

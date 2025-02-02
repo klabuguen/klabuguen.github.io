@@ -4,7 +4,7 @@ date: 2024-08-01
 description: "A cool project showcasing my skills in embedded systems."
 image: "/images/analog-led-spectrum.png"
 link: "https://github.com/myprofile/my-awesome-project"
-categories: ["Embedded Systems", "C", "DSP"]
+categories: ["Electronics"]
 ---
 
 This project involves developing firmware for real-time data processing using STM32.
