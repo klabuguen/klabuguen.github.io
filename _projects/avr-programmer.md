@@ -2,7 +2,7 @@
 title: "AVR Programmer"
 date: 2024-03-10
 description: "Lorem ipsum odor amet, consectetuer adipiscing elit."
-image: "/images/avr-programmer.jpg"
+image: "/images/avr-programmer.JPG"
 link: "https://github.com/myprofile/my-awesome-project"
 categories: ["Arduino", "Embedded Systems", "C", "Soldering"]
 ---
