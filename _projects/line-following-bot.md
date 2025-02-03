@@ -1,9 +1,9 @@
 ---
 title: "Line-Following Robot"
-date: 2024-01-20
-description: "A cool project showcasing my skills in embedded systems."
+# date: 2017-05-10
+description: "From 2015-2017, I worked with a team of 2-4 other team members to design and build an autonomous car for the UCSD GrandPrIEEE 2016 and 2017 competition. The objective of this competition is to design and build an autonomous car that can travel through a preset course in the shortest time possible."
 image: "/images/stoops.png"
-link: "https://github.com/myprofile/my-awesome-project"
+link: "/under-construction.html"
 categories: ["Embedded Systems", "C", "C++"]
 ---
 

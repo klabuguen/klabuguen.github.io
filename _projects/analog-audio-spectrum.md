@@ -1,9 +1,9 @@
 ---
 title: "Fully Analog LED Audio Spectrum Analyzer"
 date: 2024-08-01
-description: "A cool project showcasing my skills in embedded systems."
+description: "In the Summer."
 image: "/images/analog-led-spectrum.png"
-link: "https://github.com/myprofile/my-awesome-project"
+link: "/under-construction.html"
 categories: ["Electronics"]
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: "Maze-Solving Robot"
+title: "Micromouse"
 date: 2024-01-20
-description: "A cool project showcasing my skills in embedded systems."
+description: "The Micromouse Project challenges teams to create autonomous robotic ‘mice’ programmed to solve a 16x16 maze. For this project, I specialized in the entire drive system of the mouse. I selected the motors, gears, and motor driver IC. In addition, I designed the motor mounts from scratch using CAD software and developed the code to control the motors."
 image: "/images/mm.jpg"
 link: "https://github.com/myprofile/my-awesome-project"
 categories: ["Arduino","Embedded Systems", "C"]

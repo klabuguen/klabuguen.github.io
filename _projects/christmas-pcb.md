@@ -1,10 +1,10 @@
 ---
-title: "Christmas Tree PCB"
+title: "Christmas Tree Custom PCB"
 date: 2024-01-20
-description: "A cool project showcasing my skills in embedded systems."
+description: "I designed and fabricated a custom PCB using the toner transfer method. The circuit was designed in EAGLE, printed onto glossy paper, then transferred onto copper-clad with a hot iron. I used ferric chloride as etching solution, cleaned off the toner with acetone, and drilled holes with a dremel tool. I soldered the passive components and tested continuity with a multimeter to verify the circuit. The final result was a fully functional, homemade PCB."
 image: "/images/tree-pcb-finished.JPG"
-link: "https://github.com/myprofile/my-awesome-project"
-categories: ["Electronics", "PCB"]
+link: "/under-construction.html"
+categories: ["Electronics", "Soldering", "PCB"]
 ---
 
 This project involves developing firmware for real-time data processing using STM32.

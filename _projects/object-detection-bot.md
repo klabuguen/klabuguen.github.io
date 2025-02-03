@@ -1,10 +1,10 @@
 ---
-title: "Solar Tracker"
+title: "Object-Detection Robot"
 date: 2024-01-20
-description: "I built this project using a Raspberry Pi, small solar panels, light sensors, and a stepper motor. The light sensors were used to detect the position of a light source, and the Raspberry Pi processed the data to adjust the solar panel’s angle using the stepper motor. This allowed the panel to follow the 'sun' throughout the day, optimizing energy capture."
-image: "/images/solar-tracker.png"
-link: "/under-construction.html"
-categories: ["RaspberryPi", "Embedded Systems", "C++"]
+description: "A cool project showcasing my skills in embedded systems."
+image: "/images/object-detection.png"
+link: "https://github.com/myprofile/my-awesome-project"
+categories: ["Jetson Nano","Embedded Systems", "C", "C++"]
 ---
 
 This project involves developing firmware for real-time data processing using STM32.

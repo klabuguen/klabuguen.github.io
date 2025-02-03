@@ -1,10 +1,10 @@
 ---
 title: "Real-Time Embedded LED Audio Spectrum Analyzer"
 date: 2024-01-20
-description: "A cool project showcasing my skills in embedded systems."
+description: "In 2016, I worked with a team of three other students at UC San Diego to build a fully analog LED audio spectrum analyzer. I wanted to work on a real-time embedded version of the project."
 image: "/images/rt-led-spectrum.png"
-link: "https://github.com/myprofile/my-awesome-project"
-categories: ["Baremetal","Embedded Systems", "C"]
+link: "/under-construction.html"
+categories: ["STM32F4","Baremetal","Embedded Systems", "C"]
 ---
 
 This project involves developing firmware for real-time data processing using STM32.

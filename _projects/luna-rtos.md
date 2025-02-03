@@ -1,10 +1,10 @@
 ---
 title: "LunaRTOS"
 date: 2024-01-20
-description: "A cool project showcasing my skills in embedded systems."
+description: "LunaRTOS is a custom RTOS that I'm currently developing for my embedded systems projects. The project currently includes multiple scheduling algorithms and a Board Support Package (BSP) developed from scratch to provide low-level hardware interfacing and initialization."
 image: "/images/lunartos.png"
-link: "https://github.com/myprofile/my-awesome-project"
-categories: ["RTOS", "C", "Assembly"]
+link: "/under-construction.html"
+categories: ["STM32","RTOS", "C", "Assembly"]
 ---
 
 This project involves developing firmware for real-time data processing using STM32.
