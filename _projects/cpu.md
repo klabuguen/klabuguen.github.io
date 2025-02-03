@@ -1,9 +1,9 @@
 ---
 title: "MIPS Pipelined Processor"
 date: 2024-01-20
-description: "A cool project showcasing my skills in embedded systems."
+description: "The MIPS Pipelined Processor is a 5-stage pipelined processor that supports R-type, I-type, and J-type instructions. The microprocessor includes a control unit (which decodes instructions), data/instruction memory, register file, and arithmetic logic unit (ALU)."
 image: "/images/cpu.png"
-link: "https://github.com/myprofile/my-awesome-project"
+link: "/under-construction.html"
 categories: ["HDL","Verilog","Embedded Systems", "C", "Assembly"]
 ---
 
