@@ -1,7 +1,7 @@
 ---
 title: "Tiny AVR Programmer"
 date: 2024-03-10
-description: "I designed and built an Arduino UNO shield that was used to burn a bootloader onto an ATtiny as well as program it. The shield was built from scratch and included an LED indicator used to verify successful uploads. It streamlined code uploads for multiple projects I'd worked on that used the ATtiny."
+description: "I designed and built an Arduino UNO shield that was used to burn a bootloader onto an ATtiny as well as program it using the Arduino IDE. The shield was built from scratch and included an LED indicator used to verify successful uploads. It streamlined code uploads for multiple projects I'd worked on that used the ATtiny."
 image: "/images/avr-programmer.JPG"
 link: "/under-construction.html"
 categories: ["Arduino", "ATTiny84","Embedded Systems", "C", "Soldering"]
