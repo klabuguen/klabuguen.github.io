@@ -1,5 +1,5 @@
 ---
-title: "Object-Detection Robot"
+title: "Object-Detection Bot"
 date: 2024-01-20
 description: "TBD"
 image: "/images/object-detection.png"
