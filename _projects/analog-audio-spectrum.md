@@ -1,7 +1,7 @@
 ---
 title: "Fully Analog LED Audio Spectrum Analyzer"
 date: 2024-08-01
-description: "In the Summer."
+description: "I built an LED audio spectrum analyzer with three other group members that consisted of a 10x10 LED matrix display and was connected to 10 different bandpass filters. Each column of the matrix represented a frequency of our choosing which ranging from 32Hz to 16kHz, and the amplitude was determined by the intensity of the signal the particular frequency."
 image: "/images/analog-led-spectrum.png"
 link: "/under-construction.html"
 categories: ["Electronics"]

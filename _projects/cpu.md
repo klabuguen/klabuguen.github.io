@@ -4,7 +4,7 @@ date: 2024-01-20
 description: "The MIPS Pipelined Processor is a 5-stage pipelined processor that supports R-type, I-type, and J-type instructions. The microprocessor includes a control unit (which decodes instructions), data/instruction memory, register file, and arithmetic logic unit (ALU)."
 image: "/images/cpu.png"
 link: "/under-construction.html"
-categories: ["HDL","Verilog","Embedded Systems", "C", "Assembly"]
+categories: ["Zybo Z7","HDL","Verilog","Embedded Systems", "C", "Assembly"]
 ---
 
 This project involves developing firmware for real-time data processing using STM32.

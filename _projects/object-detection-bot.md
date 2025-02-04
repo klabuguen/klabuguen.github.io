@@ -1,7 +1,7 @@
 ---
 title: "Object-Detection Robot"
 date: 2024-01-20
-description: "A cool project showcasing my skills in embedded systems."
+description: "TBD"
 image: "/images/object-detection.png"
 link: "https://github.com/myprofile/my-awesome-project"
 categories: ["Jetson Nano","Embedded Systems", "C", "C++"]
