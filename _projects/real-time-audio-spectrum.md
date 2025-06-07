@@ -1,7 +1,7 @@
 ---
 title: "Real-Time Embedded LED Audio Spectrum Analyzer"
 date: 2024-01-20
-description: "In 2016, I worked with a team of three other students at UC San Diego to build a fully analog LED audio spectrum analyzer. I wanted to work on a real-time embedded version of the project."
+description: "I built an audio spectrum analyzer using an STM32F4-series microcontroller, driving a 32x16 HUB75 LED matrix to visualize real-time frequency content."
 image: "/images/rt-led-spectrum.png"
 link: "/under-construction.html"
 categories: ["STM32F4","Baremetal","Embedded Systems", "C"]
