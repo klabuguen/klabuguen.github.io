@@ -4,7 +4,7 @@ date: 2025-01-20
 description: "I designed and implemented a Super Hash Processor in Verilog integrating three standard cryptographic algorithms — MD5, SHA-1, and SHA-256."
 image: "/images/cpu.png"
 link: "/under-construction.html"
-categories: ["Algorithms", "Verilog", "Cybersecurity"]
+categories: ["Algorithms", "Verilog"]
 ---
 
 This project involves developing firmware for real-time data processing using STM32.
