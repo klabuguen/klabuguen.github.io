@@ -1,6 +1,6 @@
 ---
 title: "Super-Hash Processor"
-date: 2025-01-20
+date: 2010-01-20
 description: "I designed and implemented a Super Hash Processor in Verilog integrating three standard cryptographic algorithms — MD5, SHA-1, and SHA-256."
 image: "/images/superhash.png"
 link: "/under-construction.html"
