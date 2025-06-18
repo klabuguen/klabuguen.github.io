@@ -1,5 +1,5 @@
 ---
-title: "Janky Solar Tracker"
+title: "Solar Tracker"
 date: 2024-01-20
 description: "I built this project using a Raspberry Pi, small solar panels, light sensors, and a stepper motor. The light sensors were used to detect the position of a light source, and the Raspberry Pi processed the data to adjust the solar panel’s angle using the stepper motor. This allowed the panel to follow the 'sun' throughout the day, optimizing energy capture."
 image: "/images/solar-tracker.png"
