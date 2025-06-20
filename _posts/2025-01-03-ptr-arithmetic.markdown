@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Day 003: Pointer Arithmetic Review"
+title:  "Pointer Arithmetic Review"
 date:   2025-01-03 00:08:00 -0800
 categories: 365-days-of-code c-fundamentals
 ---

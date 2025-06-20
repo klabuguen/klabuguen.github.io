@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Day 002: Pended SVC"
+title:  "Pended SVC"
 date:   2025-01-02 00:08:00 -0800
 categories: 365-days-of-code rtos-dev
 ---

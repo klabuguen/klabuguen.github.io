@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Day 003: Pointer Arithmetic Review"
-date:   2025-01-03 00:08:00 -0800
-categories: 365-days-of-code c-fundamentals
+title:  "Setting up the STM32 with VSCode and CMake"
+date:   2025-01-05 00:08:00 -0800
+categories: 365-days-of-code workspace
 ---
 I've been rusty in regards to C pointer fundamentals and decided to review pointer arithmetic. One can easily be thrown off by pointer arithmetic because adding 1 to a ***pointer*** is not as simple as adding two numbers in ***standard arithmetic***. For example:
 
