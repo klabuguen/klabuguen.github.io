@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "C Pointer Review"
+title:  "C Pointer Exercises"
 date:   2025-01-06 00:08:00 -0800
 categories: c-fundamentals
 ---
