@@ -2,9 +2,9 @@
 layout: post
 title:  "Spinlock Semaphore"
 date:   2025-01-01 00:08:00 -0800
-categories: 365-days-of-code rtos-dev
+categories: rtos-dev
 ---
-I've been working on [LunaRTOS](https://github.com/klabuguen/LunaRTOS) -- a custom real-time operating system -- on and off for the past two months. I'm familiar with FreeRTOS and other more safety-critical RTOSs (VxWorks, Integrity, etc), but wanted to *1) learn more about how to build a RTOS* and *2) Use a custom RTOS in my personal projects*. 
+I've been working on [LunaRTOS](https://github.com/klabuguen/LunaRTOS) -- a custom real-time operating system -- on and off for the past few months. I'm familiar with FreeRTOS and other more safety-critical RTOSs (VxWorks, Integrity, etc), but wanted to *1) learn more about how to build a RTOS* and *2) Use a custom RTOS in my personal projects*.
 
 <br>Has this been a waste of time? *Well...FreeRTOS has a great community of support, is robustly built, and portable!* In my opinion, however, it's still been a ton of fun building LunaRTOS and I've been learning a lot about the work that goes into these RTOSs!
 
