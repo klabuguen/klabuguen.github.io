@@ -2,7 +2,7 @@
 layout: default
 title: Blog
 ---
-
+<h1>{{ page.title }}</h1>
 {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 <div class="posts-container">
   {% for year in posts_by_year %}

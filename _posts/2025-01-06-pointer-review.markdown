@@ -1,89 +1,135 @@
 ---
 layout: post
-title:  "C Pointer Review"
+title:  "C Pointer Exercises"
 date:   2025-01-06 00:08:00 -0800
-categories: 365-days-of-code c-fundamentals
+categories: c-fundamentals
 ---
-# Day 6:  Pointer Review
-#c-fundamentals 
-## `sizeof()` Operator
- `sizeof()` is a ***compile-time operator*** in C that determines the size of a data type, variable, or object. It is ***not*** a function and it is ***not*** part of a library! The `sizeof()` operator is built into the C language, and the compiler translates `sizeof()` into the data type or variable size passed into the operator during compilation.
+# Pointer Exercises
 
-The `sizeof()` operator can be useful when dynamically allocating memory based on the size of a data type. For example, the following line of code may be used to dynamically allocate memory for an array of 10 integers:
+## 1. Swap Two Integers
+*Implement a function that swaps two integers.*
 
-```
-int *arr = malloc(10 * sizeof(int));
-```
-
-#### Examples:
-Examples (1)-(3) may be fairly straight forward, but (4) & (5) can be a bit tricky.
-```
-(1) printf("(1) size = %d\n", sizeof(int));
-(2) printf("(2) size = %d\n", sizeof(double));
-(3) printf("(3) size = %d\n", sizeof(char));
-(4) printf("(4) size = %d\n", sizeof('a'));
-(5) printf("(5) size = %d\n", sizeof("a"));
-```
-
-After running the example code, I get the output below. Here, an `int` is of size 4 (bytes), `double` is 8 bytes,  and `char` is 1 byte.  What may be surprising to some, is that **(3)** `sizeof('a')` is 4 bytes and **(4)** `sizeof("a")` is 2 bytes. 
+In the function below, I take in two pointers `int *a` and `int *b` as arguments, then create a temporary variable to store the value in `a`. Next, I store the value of `b` in `a`, then store `tmp` in `b`.
 
 ```
-(1) size = 4
-(2) size = 8
-(3) size = 1
-(4) size = 4
-(5) size = 2
+void swapInts(int *a, int *b){
+    int tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
 ```
 
-(3) `sizeof('a')` is 4 bytes because `'a'` is considered a ***character literal***, which in C/C++, has the type `int` ***not*** `char`. 
+## 2. Swap Two Integers without a `tmp`Variable
+*Implement a function that swaps two integers without using a third `tmp` variable. Try to use addition/subtraction and multiplication/division.*
 
-(4) `sizeof("a")` is 2 bytes because `"a"` is considered a ***string literal***, which in C/C++, is represented as an array of `char`. Thus, `sizeof("a")` evaluates to 2 bytes because the string literal contains both character `a` and `\0`.
-
-## Multiple Indirection
-***Multiple indirection*** refers to pointers that point to other pointers, aka "pointers to pointers". (1) is an example of a single indirection, while (2) is a pointer to a pointer that holds the memory address of another pointer.
+**Addition/Subtraction**
 
 ```
-int a = 55;
-(1) int *ptr1 = &a;
-(2) int **ptr2 = &ptr1;
+void swapIntsNoThird1(int *a, int *b){
+    *a = *a + *b;
+    *b = *a - *b;
+    *a = *a - *b;
+}
 ```
 
-## General Pointer
-### What is `void*`?
-`void*` is a universal pointer used in the development of general purpose functions where  pointers can point to any data type (e.g. integer, float, double, etc).  For example:
+**Multiplication/Division**
 
 ```
-int a = 10;
-void *ptr = &a;
+void swapIntsNoThird2(int *a, int *b){
+    *a = *a * *b;
+    *b = *a / *b;
+    *a = *a / *b;
+}
 ```
 
-#### Casting and Dereferencing:
-The `void*` pointer can be used to hold the address of any data type, but cannot be dereferenced without casting to a specified type. Attempting to dereference a `void*` pointer will result in a compilation error.   
-`
+## 3. Generic Swap Function
+
+*Implement a function that swaps the values of two unknown data types, given the size of the data type.*
+
+The function below takes in two generic  `void *` pointers as arguments as well as the size of the data type. `malloc()` is used to dynamically allocate memory of `size` for variable `tmp`. The `memcpy()` function provided by the `string.h` library copies the value in `a` to `tmp`, `b` to `a`, and `tmp` to `b`. Finally, the dynamic memory is deallocated/released at the end of the function in order to prevent potential memory leaks.
+
 ```
-printf("value of *ptr: %d\n", *ptr); // Wrong, compiler error
+void genericSwap(void *a, void *b, int size){
+    void *tmp = malloc(size);
+    memcpy(tmp, a, size);
+    memcpy(a, b, size);
+    memcpy(b, tmp, size);
+    free(tmp);
+}
+```
+
+- Note to self: How would I solve this without memcpy?
+
+## 4. Search if an Element is in a Given Array
+
+*Implement a function that returns true if it exists in a given array, otherwise return false.*
+
+This is a fairly straight forward question, but I included it in my list of pointer exercises as a reminder that an ***array degrades to a pointer*** to the first element of the array. An alternative way of writing the function signature is:
+
+```
+bool search(int arr[], int element, int size);
+```
+
+In the function I've implemented below, I pass in 1) a pointer to the first element in `arr`, 2) the `element` I want to search for, and finally, 3) the number of elements (or `size`) of the array. I simply loop through all elements in the array and check to see if the current element is equal to `element` - if it is, then I `return true.` If the element is not present in the array, then I `return false`. 
+
+```
+bool search(int *arr, int element, int size){
+    for(int i = 0; i < size; i++){
+        if(arr[i] == element){
+            return true;
+        }
+    }
+    return false;
+}
+```
+
+## 5. Swap Two Arrays of the Same Size
+
+*Implement a function that swaps the values of two arrays of the same (known) size.*
+
+- **Solved in O(n) Time:**
+There are multiple ways to solve this! This can actually be solved using the `genericSwap()` function in section (3) above. Another way is to use `swapInts()` implemented above in section (1) and pass each element by reference into the function I've implemented below `swapArrayOn().
+
+```
+void swapArrOn(int *arr1, int *arr2){
+    for(int i = 0; i < SIZE; i++){
+        swapInts(&arr1[i], &arr2[i]);
+    }
+}
+```
+
+- **Solved in O(1) Time:**
+Another way to solve this problem is by utilizing dynamically allocated arrays and multiple indirection. In the snippet of code below, `swapArrO1()` takes in `void **a` and `void **b` as arguments. The function 1) stores the address of `a` in the temporary `void*` variable `tmp`, 2) assigns the address of `b` to `a`, and finally 3) assigns the address of `tmp` to `b`. The addresses of `a` and `b` are swapped, essentially swapping the array values.
+
+I provide an example of how the function can be used: `int *a` and `int *b` are dynamically allocated arrays that are later initialized in the `for` loop. A key concept to keep in mind is that the dynamically allocated arrays store the pointer to the allocated memory (on the heap) in variables `int *a` and `int *b`. Swapping the pointers stored in `int *a` and `int *b` changes where `a` and `b` point to without changing the underlying data. A statically allocated array is stored in a fixed location in memory (in the stack) -- its base address is immutable and cannot be modified. Thus, swapping two pointers that point to statically allocated arrays is not allowed.
+
+Although `a` and `b` are of type `int*`, `&a` and `&b` are of type `int**`. I simply cast `&a` and `&b` to the generic pointer to pointer `void**` in order to comply with the `swapArrO1()` function signature.
+
+```
+void swapArrO1(void **a, void **b){
+    void *tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
+
+int main() {
+    int *a = (int*)malloc(SIZE * sizeof(int));
+    int *b = (int*)malloc(SIZE * sizeof(int));
+
+	// Initialize array a and array b
+    for(int i = 0; i < SIZE; i++){
+        a[i] = i;
+        b[i] = i * 10;
+    }
+    
+    swapArrO1((void**)&a, (void**)&b);
+    return 0;
+}
 ```
 
 ```
-ERROR!
-/tmp/MBJKsMGZpU/main.c: In function 'main':
-/tmp/MBJKsMGZpU/main.c:13:35: warning: dereferencing 'void *' pointer
-   13 |     printf("value of *ptr: %d\n", *ptr);
-      |                                   ^~~~
-/tmp/MBJKsMGZpU/main.c:13:35: error: invalid use of void expression
-
-
-=== Code Exited With Errors ===
-```
-
-The **correct** syntax is:
-
-```
-printf("value of *ptr: %d\n", *(int*)ptr); // Correct!
-```
-
-```
-value of *ptr: 10
+array a: 0 10 20 30 40 
+array b: 0 1 2 3 4 
 
 
 === Code Execution Successful ===
