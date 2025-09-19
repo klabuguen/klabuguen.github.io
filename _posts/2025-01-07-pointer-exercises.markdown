@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "C Pointer Review"
-date:   2025-01-06 00:08:00 -0800
-categories: 365-days-of-code c-fundamentals
+date:   2025-01-07 00:08:00 -0800
+categories: c-fundamentals
 ---
 ## `sizeof()` Operator
  `sizeof()` is a ***compile-time operator*** in C that determines the size of a data type, variable, or object. It is ***not*** a function and it is ***not*** part of a library! The `sizeof()` operator is built into the C language, and the compiler translates `sizeof()` into the data type or variable size passed into the operator during compilation.
