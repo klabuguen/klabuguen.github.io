@@ -1,10 +1,10 @@
 ---
-title: "LunaRTOS"
-date: 2005-01-21
-description: "LunaRTOS is a custom RTOS that I'm currently developing for my embedded systems projects. The project currently supports multiple scheduling algorithms and a Board Support Package (BSP) developed from scratch to provide low-level hardware interfacing and initialization."
-image: "/images/lunartos.png"
+title: "Port Scanner"
+date: 2025-01-20
+description: "I developed a port scanner in Python, which scans a PC for open TCP/UDP ports."
+image: "/images/cpu.png"
 link: "/under-construction.html"
-categories: ["STM32","RTOS", "C", "Assembly"]
+categories: ["Algorithms", "Python"]
 ---
 
 This project involves developing firmware for real-time data processing using STM32.
