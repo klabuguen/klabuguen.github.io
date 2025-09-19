@@ -1,6 +1,6 @@
 ---
 title: "Christmas Tree Custom PCB"
-date: 2024-01-20
+date: 2025-01-20
 description: "I designed and fabricated a custom PCB using the toner transfer method. The circuit was designed in EAGLE, printed onto glossy paper, then transferred onto copper-clad with a hot iron. I used ferric chloride as etching solution, cleaned off the toner with acetone, and drilled holes with a dremel tool. I soldered the passive components and tested continuity with a multimeter to verify the circuit. The final result was a fully functional, homemade PCB."
 image: "/images/mm.jpg"
 link: "/under-construction.html"
