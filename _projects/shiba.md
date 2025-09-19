@@ -1,7 +1,7 @@
 ---
 title: "Smart Hovering & Integrated Balancing Aircraft"
 date: 2025-09-01
-description: "Project S.H.I.B.A is a custom built quadcopter designed entirely from scratch as both a flight vehicle and experimental testbed. It serves as a platform for exploring flight dynamics, control algorithms, computer vision, and real-time embedded software."
+description: "Project S.H.I.B.A is a custom built quadcopter and experimental testbed. It serves as a platform for exploring flight dynamics, control algorithms, computer vision, and real-time embedded software."
 image: "/images/shiba.jpg"
 link: "/under-construction.html"
 categories: ["Algorithms", "Embedded Systems", "C", "C++"]
