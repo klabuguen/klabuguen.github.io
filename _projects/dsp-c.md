@@ -1,6 +1,6 @@
 ---
 title: "Signal Processing in C"
-date: 2025-01-20
+date: 2005-01-25
 description: "I created a GitHub repository that contains implementations of several common digital/image processing algorithms in C. In addition, I wrote custom ImageReader and ImageWriter functions."
 image: "/images/dsp-c-img.png"
 link: "/under-construction.html"
