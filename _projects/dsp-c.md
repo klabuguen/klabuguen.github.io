@@ -1,7 +1,7 @@
 ---
 title: "Signal Processing in C"
 date: 2005-01-25
-description: "I created a GitHub repository that contains implementations of several common digital/image processing algorithms in C."
+description: "I created a GitHub repository that contains implementations of several common digital signal/image processing algorithms in C."
 image: "/images/dsp-c-img.png"
 link: "/under-construction.html"
 categories: ["Algorithms", "C"]
